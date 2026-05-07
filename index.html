@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Question Search</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: #f8f5f2;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        #questionInput {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+        #searchBtn {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        #searchBtn:hover {
+            background-color: #219653;
+        }
+        #results {
+            margin-top: 2rem;
+        }
+        .verse {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid #27ae60;
+        }
+        .reference {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ask Any Question → Search Quran</h1>
+    <input type="text" id="questionInput" placeholder="Type your question or topic here...">
+    <button id="searchBtn">Search Relevant Verses</button>
+    <div id="results"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
